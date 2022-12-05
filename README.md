@@ -6,6 +6,7 @@ For additional notes, look at [this](https://bioinformaticsworkbook.org/dataAnal
 # Pipeline
 
 ## -> Cellranger
+Cell ranger is for mapping sequenced reads to concatenated reference genomes of host and pathogen.
 ###  Prepare GTF, genome, and reads
 
 1. **Download annotation and reference genome files** 
