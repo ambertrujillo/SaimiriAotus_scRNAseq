@@ -2,8 +2,6 @@
 
 # Script to download Plasmodium vivax genome, vivax (ASM241v2)
 
-cd genomes/
-
 GENOME_FA=vivax.fa
 
 wget 'ftp.ensemblgenomes.org/pub/protists/release-54/fasta/plasmodium_vivax/dna/Plasmodium_vivax.ASM241v2.dna.toplevel.fa.gz' \
