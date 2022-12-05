@@ -4,10 +4,12 @@ For additional notes, look at [this](https://bioinformaticsworkbook.org/dataAnal
 
 
 # Pipeline
-##  Prepare GTF, genome, and reads
 
-1. Download annotation and reference genome files 
-##### ***Cell ranger requires a gtf file, not a gff file*** 
+## -> Cellranger
+###  Prepare GTF, genome, and reads
+
+1. **Download annotation and reference genome files** 
+      + *Cell ranger requires a gtf file, not a gff file* 
 > Necessary module(s): kent/385
 
   * _Aotus nancymaae_
