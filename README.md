@@ -15,7 +15,7 @@ Cell ranger is for mapping sequenced reads to concatenated reference genomes of 
 
 **1. Download annotation and reference genome files** 
       + *Cell ranger requires a gtf file, not a gff file* 
-> Necessary module(s): kent/385
+> Necessary module(s): kent/385, samtools/intel/1.11
 
   * _Aotus nancymaae_
 
