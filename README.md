@@ -7,6 +7,7 @@ For additional notes, look at [this](https://bioinformaticsworkbook.org/dataAnal
 
 ```bash
 mkdir genomes
+cd genomes
 ```
 
 ## -> Cellranger
