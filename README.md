@@ -5,11 +5,15 @@ For additional notes, look at [this](https://bioinformaticsworkbook.org/dataAnal
 
 # Pipeline
 
+```bash
+mkdir genomes
+```
+
 ## -> Cellranger
 Cell ranger is for mapping sequenced reads to concatenated reference genomes of host and pathogen.
 ###  Prepare GTF, genome, and reads
 
-1. **Download annotation and reference genome files** 
+**1. Download annotation and reference genome files** 
       + *Cell ranger requires a gtf file, not a gff file* 
 > Necessary module(s): kent/385
 
@@ -38,4 +42,10 @@ scripts/cellranger/download_plas.sh
 ```
 ```bash
 scripts/cellranger/download_plas_annotations.sh
+```
+
+**2. Prepare each reference genome and annotation file for the creation of a concatenated reference genome and annotation file** 
+> Necessary module(s): cellranger/7.0.0, bcl2fastq/2.20.0.422
+
+
 
