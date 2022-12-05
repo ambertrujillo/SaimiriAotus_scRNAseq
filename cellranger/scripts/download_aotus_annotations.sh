@@ -5,9 +5,6 @@
 # ----------------------------------------------------------------------------------------
 
 # --- Download annotations for Aotus genome, Anon2.0
-module load kent/385
-
-cd genomes/ 
 
 AOTUS_URL=ftp.ensembl.org/pub/release-107/gtf
 
@@ -20,6 +17,3 @@ for ANNO in $ANNO1; do
 done
 
 mv Aotus_nancymaae.Anan_2.0.107.gtf aotus.gtf #rename gtf file
-
-
-cd ..
