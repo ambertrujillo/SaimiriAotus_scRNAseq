@@ -2,10 +2,6 @@
 
 # Script to download aotus genome, Anan2.0
 
-module load samtools/intel/1.11
-
-cd genomes
-
 GENOME_FA=aotus.fa
 
 wget 'ftp.ensembl.org/pub/current_fasta/aotus_nancymaae/dna/Aotus_nancymaae.Anan_2.0.dna.toplevel.fa.gz' \
