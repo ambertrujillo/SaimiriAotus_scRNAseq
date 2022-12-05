@@ -2,10 +2,6 @@
 
 # Script to download Saimiri genome, SaiBol1.0
 
-module load samtools/intel/1.11
-
-cd genomes
-
 GENOME_FA=saimiri.fa
 
 wget 'ftp.ensembl.org/pub/release-107/fasta/saimiri_boliviensis_boliviensis/dna/Saimiri_boliviensis_boliviensis.SaiBol1.0.dna.toplevel.fa.gz' \
