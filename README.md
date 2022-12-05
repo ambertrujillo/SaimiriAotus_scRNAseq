@@ -16,26 +16,26 @@ Cell ranger is for mapping sequenced reads to concatenated reference genomes of 
   * _Aotus nancymaae_
 
 ```bash
-scripts/download_aotus.sh
+scripts/cellranger/download_aotus.sh
 ```
 ```bash
-scripts/download_aotus_annotations.sh
+scripts/cellranger/download_aotus_annotations.sh
 ```
 
   * _Saimiri boliviensis_
   
 ```bash
-scripts/download_saimiri.sh
+scripts/cellranger/download_saimiri.sh
 ```
 ```bash
-scripts/download_saimiri_annotations.sh
+scripts/cellranger/download_saimiri_annotations.sh
 ```
 
   * _Plasmodium vivax_
   
 ```bash
-scripts/download_plas.sh
+scripts/cellranger/download_plas.sh
 ```
 ```bash
-scripts/download_plas_annotations.sh
+scripts/cellranger/download_plas_annotations.sh
 
