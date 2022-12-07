@@ -2,6 +2,10 @@
 scRNAseq pipeline for experimental infection of Aotus and Saimiri with P. vivax
 For additional notes, look at [this](https://bioinformaticsworkbook.org/dataAnalysis/RNA-Seq/Single_Cell_RNAseq/Chromium_Cell_Ranger.html#gsc.tab=0) link.
 
+This pipeline includes information for running:
+1. Cellranger
+2. Seurat
+3. Zinbwave
 
 # Pipeline
 
@@ -233,7 +237,7 @@ sbatch cellranger/sbatch/aotus/cellranger_count_70.sbatch
 ```
 
 ## -> Seurat
-
+Seurat is for filtering out host cells, batch correction, identifying and extracting RBC clusters.
 > Necessary package(s): 
 
 ```R
@@ -262,6 +266,7 @@ See Seurat/ParasiteLoad_perCell_Normalize_Batch.R
 See Seurat/RBC_recluster.R
 
 ## -> Zinbwave
+Zinbwave is for Create bulk data out of single cell data (every cell is an individual), re-clustering based on corrected values, and identifying DE genes in in each cluster using edgeR.
 
 See Zinbwave/Run_Zinbwave.R
 
