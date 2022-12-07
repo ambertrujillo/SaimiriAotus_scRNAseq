@@ -234,9 +234,6 @@ sbatch cellranger/sbatch/aotus/cellranger_count_70.sbatch
 
 ## -> Seurat
 
-**1. Find and make a table of reciprocal orthologs**
-
-See Seurat/orthologs.R
 > Necessary package(s): 
 
 ```R
@@ -252,4 +249,10 @@ library(tidyverse)
 library(ggplot2)
 ```
 
+**1. Find and make a table of reciprocal orthologs**
 
+See Seurat/orthologs.R
+
+**2. Create parasite load per cell metadata and find Parasite load/cell for zinbwave DE analysis**
+
+See Seurat/ParasiteLoad_perCell.R
