@@ -15,7 +15,7 @@ Cell ranger is for mapping sequenced reads to concatenated reference genomes of 
 ###  Prepare GTF, genome, and reads
 
 **1. Download annotation and reference genome files** 
-      + *Cell ranger requires a gtf file, not a gff file* 
+   + NOTE: *Cell ranger requires a gtf file, not a gff file* 
 > Necessary module(s): kent/385, samtools/intel/1.11
 
   * _Aotus nancymaae_
@@ -121,4 +121,41 @@ cellranger mkgtf vivax.gtf vivax.filtered.gtf \
 
 ```bash
 sbatch cellranger/prepare_ref_genome.sbatch
+```
+
+**4. Download FASTQ reads**
++ NOTE: *Hand make list of SRRs as SRR.numbers by pasting SRRs into text file called "SRRnumbers.txt"*
+
+```bash
+mkdir data/
+
+FILENAME="SRRnumbers.txt"
+
+LINES=$(cat $FILENAME)
+
+for LINE in $LINES
+do
+    echo "$LINE"
+    fasterq-dump --split-files $LINE
+done
+
+
+mv data/SRR*/*.sra ..
+rm -r data/SRR*
+mv *.sra data/
+
+
+tar -zcvf singlecell_fastqs.tar.gz data/
+```
+Seperate Aotus and Saimiri reads into their own directories:
+
+```bash
+#saimiri
+mv data/SRR11008269* data/saimiri/
+mv data/SRR11008272* data/saimiri/
+mv data/SRR11008273* data/saimiri/
+mv data/SRR11008276* data/saimiri/
+
+#aotus
+mv data/SRR* data/aotus
 ```
