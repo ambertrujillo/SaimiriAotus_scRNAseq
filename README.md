@@ -237,6 +237,19 @@ sbatch cellranger/sbatch/aotus/cellranger_count_70.sbatch
 **1. Find and make a table of reciprocal orthologs**
 
 See Seurat/orthologs.R
+> Necessary package(s): 
 
+```R
+library(hdf5r)
+library(devtools)
+library(Seurat)
+library(dplyr)
+library(patchwork)
+library(gprofiler2)
+library(stringr)
+library(tidyr)
+library(tidyverse)
+library(ggplot2)
+```
 
 
