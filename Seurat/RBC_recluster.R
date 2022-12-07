@@ -201,11 +201,6 @@ pdf(file="/scratch/aet359/scRNAseq/combined_analysis/Seurat/Plots/RBC/Clusters2_
 FeaturePlot(RBC.combined, features = hemoglobin.GOI)
 dev.off()
 
-pdf(file="/scratch/aet359/scRNAseq/combined_analysis/Seurat/Plots/RBC/Clusters2_3_8_13/Jain_GOI.pdf", width=811/72, height=478/72)
-FeaturePlot(RBC.combined, features = Jain.GOI) #No ENSSBOG00000029161 (ACVR2B)
-dev.off()
-
-
 pdf(file="/scratch/aet359/scRNAseq/combined_analysis/Seurat/Plots/RBC/Clusters2_3_8_13/parasite_load_heatplot.pdf")
 FeaturePlot(RBC.combined, features = "parasite_load")
 dev.off()
