@@ -260,3 +260,9 @@ See Seurat/ParasiteLoad_perCell_Normalize_Batch.R
 **3. Recluster based on RBCs**
 
 See Seurat/RBC_recluster.R
+
+## -> Zinbwave
+
+See Zinbwave/Run_Zinbwave.R
+
+
