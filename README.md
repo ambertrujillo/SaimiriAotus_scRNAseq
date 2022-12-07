@@ -120,5 +120,5 @@ cellranger mkgtf vivax.gtf vivax.filtered.gtf \
 **3. Make concatenated host-pathogen reference genome. (SBATCH JOB)** 
 
 ```bash
-sbatch prepare_ref_genome.sbatch
+sbatch cellranger/prepare_ref_genome.sbatch
 ```
