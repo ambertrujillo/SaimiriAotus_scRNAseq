@@ -222,6 +222,8 @@ mkdir SRR11008278_S6_R1
 mv SRR11008278_S* SRR11008278_S6_R1/
 ```
 
+**4. Run Cellranger count**
+
 + NOTE: *Each individual has it's own cellranger_count.sbatch in sbatch/aotus  (or saimiri)*
 Run the following for each individual
 
