@@ -1,5 +1,5 @@
 # SaimiriAotus_scRNAseq
-scRNAseq pipeline for experimental infection of Aotus and Saimiri with P. vivax
+scRNAseq pipeline for experimental infection of *Aotus* and *Saimiri* with *P. vivax*
 For additional notes, look at [this](https://bioinformaticsworkbook.org/dataAnalysis/RNA-Seq/Single_Cell_RNAseq/Chromium_Cell_Ranger.html#gsc.tab=0) link.
 
 This pipeline includes information for running:
