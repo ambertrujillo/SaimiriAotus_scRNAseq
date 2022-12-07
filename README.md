@@ -150,6 +150,9 @@ tar -zcvf singlecell_fastqs.tar.gz data/
 Seperate Aotus and Saimiri reads into their own directories:
 
 ```bash
+mkdir data/saimiri
+mkdir data/aotus
+
 #saimiri
 mv data/SRR11008269* data/saimiri/
 mv data/SRR11008272* data/saimiri/
@@ -159,3 +162,66 @@ mv data/SRR11008276* data/saimiri/
 #aotus
 mv data/SRR* data/aotus
 ```
+Rename FASTQ files for cellranger:
+
+```bash
+cd data/saimiri
+
+mv SRR11008269_1.fastq SRR11008269_S1_R1_001.fastq 
+mv SRR11008269_2.fastq SRR11008269_S1_R2_001.fastq
+mv SRR11008272_1.fastq SRR11008272_S2_R1_001.fastq
+mv SRR11008272_2.fastq SRR11008272_S2_R2_001.fastq
+mv SRR11008273_1.fastq SRR11008273_S3_R1_001.fastq
+mv SRR11008273_2.fastq SRR11008273_S3_R2_001.fastq
+mv SRR11008276_1.fastq SRR11008276_S4_R1_001.fastq
+mv SRR11008276_2.fastq SRR11008276_S4_R2_001.fastq
+
+cd data/aotus
+
+mv SRR11008270_1.fastq SRR11008270_S1_R1_001.fastq
+mv SRR11008270_2.fastq SRR11008270_S1_R2_001.fastq
+mv SRR11008271_1.fastq SRR11008271_S2_R1_001.fastq
+mv SRR11008271_2.fastq SRR11008271_S2_R2_001.fastq
+mv SRR11008274_1.fastq SRR11008274_S3_R1_001.fastq
+mv SRR11008274_2.fastq SRR11008274_S3_R2_001.fastq
+mv SRR11008275_1.fastq SRR11008275_S4_R1_001.fastq
+mv SRR11008275_2.fastq SRR11008275_S4_R2_001.fastq
+mv SRR11008277_1.fastq SRR11008277_S5_R1_001.fastq
+mv SRR11008277_2.fastq SRR11008277_S5_R2_001.fastq
+mv SRR11008278_1.fastq SRR11008278_S6_R1_001.fastq
+mv SRR11008278_2.fastq SRR11008278_S6_R2_001.fastq
+```
++ NOTE: *In order to parallelize it (array job) need to make separate folders for each individual*
+
+```bash
+cd data/saimiri
+
+mkdir SRR11008269_S1_R1
+mv SRR11008269_S* SRR11008269_S1_R1/
+mkdir SRR11008272_S2_R1
+mv SRR11008272_S* SRR11008272_S2_R1/
+mkdir SRR11008273_S3_R1
+mv SRR11008273_S* SRR11008273_S3_R1/
+mkdir SRR11008276_S4_R1
+mv *.fastq SRR11008276_S4_R1
+
+cd data/aotus
+mkdir SRR11008270_S1_R1
+mv SRR11008270_S* SRR11008270_S1_R1/
+
+
+mkdir SRR11008271_S2_R1
+mv SRR11008271_S* SRR11008271_S2_R1/
+mkdir SRR11008274_S3_R1
+mv SRR11008274_S* SRR11008274_S3_R1/
+mkdir SRR11008275_S4_R1
+mv SRR11008275_S* SRR11008275_S4_R1/
+mkdir SRR11008277_S5_R1
+mv SRR11008277_S* SRR11008277_S5_R1/
+mkdir SRR11008278_S6_R1
+mv SRR11008278_S* SRR11008278_S6_R1/
+```
+
+
+
+
