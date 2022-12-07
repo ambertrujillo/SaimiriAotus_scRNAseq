@@ -256,3 +256,7 @@ See Seurat/orthologs.R
 **2. Create parasite load per cell metadata and find Parasite load/cell for zinbwave DE analysis, LogNormalize, and CCA batch correction**
 
 See Seurat/ParasiteLoad_perCell_Normalize_Batch.R
+
+**3. Recluster based on RBCs**
+
+See Seurat/RBC_recluster.R
