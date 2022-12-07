@@ -232,4 +232,11 @@ Example:
 sbatch cellranger/sbatch/aotus/cellranger_count_70.sbatch
 ```
 
+## -> Seurat
+
+**1. Find and make a table of reciprocal orthologs**
+
+See Seurat/orthologs.R
+
+
 
