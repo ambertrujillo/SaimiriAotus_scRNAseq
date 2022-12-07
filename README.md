@@ -119,6 +119,8 @@ cellranger mkgtf vivax.gtf vivax.filtered.gtf \
     --attribute=gene_biotype:TR_J_gene \
     --attribute=gene_biotype:TR_J_pseudogene \
     --attribute=gene_biotype:TR_C_gene
+
+cd ..
 ```
 
 **3. Make concatenated host-pathogen reference genome. (SBATCH JOB)** 
