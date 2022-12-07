@@ -222,6 +222,12 @@ mkdir SRR11008278_S6_R1
 mv SRR11008278_S* SRR11008278_S6_R1/
 ```
 
++ NOTE: *Each individual has it's own cellranger_count.sbatch in scripts/aotus  (or saimiri)*
+Run the following for each individual
 
+Example:
+```bash
+sbatch cellranger/scripts/aotus/cellranger_count_70.sbatch
+```
 
 
